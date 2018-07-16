@@ -8,5 +8,16 @@ namespace ZestMonitor.Api.Data.Contexts
         public DataContext(DbContextOptions<DataContext> options) : base(options) { }
 
         public DbSet<ProposalPayments> ProposalPayments { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<ProposalPayments>().HasKey(x => x.Id);
+
+            modelBuilder.Entity<ProposalPayments>().Property(x => x.Amount).IsRequired();
+            modelBuilder.Entity<ProposalPayments>().Property(x => x.ExpectedPayment).IsRequired();
+            modelBuilder.Entity<ProposalPayments>().Property(x => x.ShortDescription);
+            modelBuilder.Entity<ProposalPayments>().Property(x => x.DateTimeCreated);
+            modelBuilder.Entity<ProposalPayments>().Property(x => x.DateTimeUpdated);
+        }
     }
 }
