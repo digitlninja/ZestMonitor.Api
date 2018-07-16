@@ -1,3 +1,5 @@
+using System;
+
 namespace ZestMonitor.Api.Data.Entities
 {
     public class EntityBase
