@@ -14,6 +14,7 @@ namespace ZestMonitor.Api.Data.Contexts
             modelBuilder.Entity<ProposalPayments>().HasKey(x => x.Id);
 
             modelBuilder.Entity<ProposalPayments>().Property(x => x.Amount).IsRequired();
+            modelBuilder.Entity<ProposalPayments>().Property(x => x.Hash).IsRequired();
             modelBuilder.Entity<ProposalPayments>().Property(x => x.ExpectedPayment).IsRequired();
             modelBuilder.Entity<ProposalPayments>().Property(x => x.ShortDescription);
             modelBuilder.Entity<ProposalPayments>().Property(x => x.DateTimeCreated);

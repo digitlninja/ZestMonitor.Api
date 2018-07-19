@@ -1,6 +1,10 @@
-namespace ZestMonitor.Api.Data.Entities
+using FluentValidation.Attributes;
+using ZestMonitor.Api.Validation;
+
+namespace ZestMonitor.Api.Data.Models
 {
-    public class ProposalPayments : EntityBase
+    [Validator(typeof(ProposalPaymentsValidator))]
+    public class ProposalPaymentsModel
     {
         public string Hash { get; set; }
         public string ShortDescription { get; set; }

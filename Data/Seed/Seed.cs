@@ -20,7 +20,7 @@ namespace ZestMonitor.Api.Data.Seed
             // this.context.RemoveRange(this.context.ProposalPayments);
             // await this.context.SaveChangesAsync();
 
-            var json = await System.IO.File.ReadAllTextAsync("./ProposalPaymentsSeed.json");
+            var json = await System.IO.File.ReadAllTextAsync("Data/Seed/ProposalPaymentsSeed.json");
             var proposalPayments = JsonConvert.DeserializeObject<List<ProposalPayments>>(json);
 
             foreach (var proposalPayment in proposalPayments)
