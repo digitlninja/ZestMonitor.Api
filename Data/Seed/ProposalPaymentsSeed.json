@@ -5,8 +5,8 @@
             "To construct a planet-sized space weapon that can eliminate planets within seconds.",
         "amount": 10000,
         "expectedPayment": 20000,
-        "dateTimeCreated": "2018-07-17T19:33:35.046Z",
-        "dateTimeUpdated": "2018-07-17T19:33:35.046Z"
+        "createdAt": "2018-07-17T19:33:35.046Z",
+        "updatedAt": "2018-07-17T19:33:35.046Z"
     },
     {
         "hash": "caf6edec6897869d12bd65a46c846de9dcb5109f7ce3b3089a889f3ad5224b41",
@@ -14,7 +14,7 @@
             "To construct a weapon sized planet that can eliminate jedi within seconds.",
         "amount": 80000,
         "expectedPayment": 240000,
-        "dateTimeCreated": "2018-04-2T06:53:35.000Z",
-        "dateTimeUpdated": "2018-06-13T10:15:26.050Z"
+        "createdAt": "2018-04-2T06:53:35.000Z",
+        "updatedAt": "2018-06-13T10:15:26.050Z"
     }
 ]

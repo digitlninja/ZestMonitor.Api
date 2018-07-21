@@ -31,22 +31,23 @@ namespace ZestMonitor.Api
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddDbContext<DataContext>(x => x.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<DataContext>(x => x.UseMySql(Configuration["ConnectionStrings:Default"]));
             services.AddTransient<Seed>();
             services.AddMvc().AddFluentValidation();
             services.AddSingleton<IValidator<ProposalPaymentsModel>, ProposalPaymentsValidator>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, Seed seed)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, Seed seed, ILoggerFactory loggerFactory)
         {
+            loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
             }
-
             // TODO:: Check PP table for any records first, if none -> run seed
             seed.ProposalPayments();
+            // Console.WriteLine(connectionStringSecret);
             app.UseMvc();
         }
     }

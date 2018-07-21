@@ -17,8 +17,8 @@ namespace ZestMonitor.Api.Data.Contexts
             modelBuilder.Entity<ProposalPayments>().Property(x => x.Hash).IsRequired();
             modelBuilder.Entity<ProposalPayments>().Property(x => x.ExpectedPayment).IsRequired();
             modelBuilder.Entity<ProposalPayments>().Property(x => x.ShortDescription);
-            modelBuilder.Entity<ProposalPayments>().Property(x => x.DateTimeCreated);
-            modelBuilder.Entity<ProposalPayments>().Property(x => x.DateTimeUpdated);
+            modelBuilder.Entity<ProposalPayments>().Property(x => x.CreatedAt);
+            modelBuilder.Entity<ProposalPayments>().Property(x => x.UpdatedAt);
         }
     }
 }

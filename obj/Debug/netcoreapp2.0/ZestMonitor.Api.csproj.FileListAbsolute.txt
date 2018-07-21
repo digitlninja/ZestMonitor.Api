@@ -9,3 +9,4 @@ D:\Development\Projects\Crypto\Zest-Masternode-Monitor\ZestMonitor.Api\obj\Debug
 D:\Development\Projects\Crypto\Zest-Masternode-Monitor\ZestMonitor.Api\obj\Debug\netcoreapp2.0\ZestMonitor.Api.AssemblyInfo.cs
 D:\Development\Projects\Crypto\Zest-Masternode-Monitor\ZestMonitor.Api\obj\Debug\netcoreapp2.0\ZestMonitor.Api.dll
 D:\Development\Projects\Crypto\Zest-Masternode-Monitor\ZestMonitor.Api\obj\Debug\netcoreapp2.0\ZestMonitor.Api.pdb
+D:\Development\Projects\Crypto\Zest-Masternode-Monitor\ZestMonitor.Api\obj\Debug\netcoreapp2.0\UserSecretsAssemblyInfo.cs

@@ -19,7 +19,7 @@ namespace ZestMonitor.Api
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>()
-                .Build();
+            .UseStartup<Startup>()
+            .Build();
     }
 }
